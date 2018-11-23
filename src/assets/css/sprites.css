@@ -1,0 +1,16 @@
+.u-icon { background-image: url(./sprites.png); zoom:0.4}
+.u-icon-account-default{ width: 48px; height: 48px; background-position: 0px -152px; } 
+.u-icon-account{ width: 48px; height: 48px; background-position: -68px -152px; } 
+.u-icon-back-black{ width: 48px; height: 48px; background-position: -136px -152px; } 
+.u-icon-back-white{ width: 48px; height: 48px; background-position: -81px -84px; } 
+.u-icon-friend-default{ width: 48px; height: 48px; background-position: -165px 0px; } 
+.u-icon-friend{ width: 48px; height: 48px; background-position: -165px -68px; } 
+.u-icon-home-default{ width: 61px; height: 48px; background-position: 0px -84px; } 
+.u-icon-home{ width: 61px; height: 48px; background-position: -84px 0px; } 
+.u-icon-music_tg{ width: 64px; height: 64px; background-position: 0px 0px; } 
+.u-icon-music-default{ width: 48px; height: 48px; background-position: -233px 0px; } 
+.u-icon-music{ width: 48px; height: 48px; background-position: -233px -68px; } 
+.u-icon-pause{ width: 48px; height: 48px; background-position: -233px -136px; } 
+.u-icon-play{ width: 48px; height: 48px; background-position: 0px -220px; } 
+.u-icon-video-default{ width: 48px; height: 48px; background-position: -68px -220px; } 
+.u-icon-video{ width: 48px; height: 48px; background-position: -136px -220px; } 

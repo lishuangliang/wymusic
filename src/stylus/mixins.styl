@@ -1,0 +1,73 @@
+g-color = #ca0c16
+g-bgcolor = beige
+g-white-font-color=#ddd
+
+.bot-border-1px
+  &::after
+    content: ''
+    position absolute
+    left 0
+    right 0
+    bottom 0
+    height 1px
+    background g-white-font-color
+    transform scaleY(0.5)
+
+.top-border-1px
+  &::after
+    content: ''
+    position absolute
+    left 0
+    right 0
+    top 0
+    height 1px
+    background g-white-font-color
+    transform scaleY(0.5)
+
+
+vendor(prop, args)
+  -webkit-{prop} args
+  {prop} args
+
+.slide-left-enter-active,
+.slide-left-leave-active,
+.slide-up-enter-active,
+.slide-up-leave-active,
+.fade-in-enter-active,
+.fade-in-leave-active
+  transition all .3s ease
+
+.slide-left-enter,
+.slide-left-leave-to
+  transform translateX(100%)
+  opacity 0
+
+.slide-up-enter,
+.slide-up-leave-to
+  vendor('transform', translateY(100%))
+  opacity 0
+
+.fade-in-enter,
+.fade-in-leave-to
+  opacity 0
+
+.zoom-in-enter-active,
+.zoom-in-leave-active
+  transition all .14s ease
+.zoom-in-enter,
+.zoom-in-leave-to
+  opacity 0
+  transform scale(0.8)
+
+
+@keyframes rotate{
+  0%{
+    transform rotate(0)
+  }
+  100%{
+    transform rotate(360deg)
+  }
+}
+
+
+
