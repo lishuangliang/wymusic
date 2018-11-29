@@ -3,12 +3,10 @@
   margin 0
   padding 0
   outline none
-
-  &: not(input, textarea) {
+  &:not(input, textarea) {
     -webkit-touch-callout: none;
     -webkit-user-select: none;
   }
-
 html,
 body,
 #app
@@ -31,14 +29,11 @@ ul,li
   top 0
   bottom: 0
   background beige
-
-
 .u-icon-back-white,
 .u-icon-back-black
   position absolute
   left 26px
   top: 26px
-
 .m-list-panel
   margin-bottom 16px
   box-sizing border-box
@@ -69,8 +64,6 @@ ul,li
       transform scaleY(0.5)
     &:last-child:after
       background-color transparent
-
-
 .block-loading
   text-align center
   &.center
@@ -96,7 +89,6 @@ ul,li
     &:nth-child(3){
       animation-delay 0.2s
     }
-
 @keyframes blockLoading{
   to{transform:scaleY(0.3)}
 }

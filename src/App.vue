@@ -63,5 +63,4 @@
 </script>
 <style lang="stylus" rel="stylesheet/stylus">
   @import "../src/stylus/base.styl"
-  @import "../src/stylus/mixins.styl"
 </style>

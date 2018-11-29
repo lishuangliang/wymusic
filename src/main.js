@@ -15,8 +15,9 @@ import loading from './assets/images/confused.jpg';
 import error from './assets/images/error.jpg';
 
 FastClick.attach(document.body);
-import Vconsole from 'vconsole'
-let vConsole = new Vconsole();
+
+// import Vconsole from 'vconsole'
+// let vConsole = new Vconsole();
 
 
 

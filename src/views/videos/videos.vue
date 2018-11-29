@@ -17,9 +17,7 @@
             <div class="u-btn-play" @click="playVideo(index)"></div>
           </li>
           <video-player ref="video"
-                        :videoSrc="currVideoSrc"
-                        :rendered="videoShow"
-                        :top = "offsetTop"
+                        :videoOption="videoOption"
                         @closeVideo="closeVideo"></video-player>
         </ul>
 
@@ -41,9 +39,11 @@
         name: "videos",
         data(){
           return {
-            currVideoSrc : '',
-            offsetTop : 0,
-            videoShow : false,
+            videoOption : {
+              rendered : false,
+              src : '',
+              top : 0
+            },
             videoList : [],
           }
         },
@@ -56,8 +56,8 @@
 
         methods:{
           async playVideo(index){
-            this.videoShow = true;
-            this.offsetTop = index * 220;
+            this.videoOption.rendered = true;
+            this.videoOption.top = index * 220;
 
             let res = await reqMvSrc(this.videoList[index].id);
             //console.log(res);
@@ -66,7 +66,7 @@
               return;
             }
 
-            this.currVideoSrc = res.data.brs[240];
+            this.videoOption.src = res.data.brs[240];
             this.$refs.video.playVideo();
           },
 
@@ -87,8 +87,8 @@
 
           },
           closeVideo(){
-            this.videoShow = false;
-            this.currVideoSrc = '';
+            this.videoOption.rendered = false;
+            this.videoOption.src = '';
           }
         },
         components:{

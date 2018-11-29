@@ -3,7 +3,7 @@
       <div class="m-video" v-show="videoOption.rendered" :style="{top : videoOption.top + 'px'}">
         <video  ref="videoEle"
                 webkit-playsinline playsinline
-                :src="videoOption.videoSrc"
+                :src="videoOption.src"
                 @timeupdate="videoplaying"></video>
         <div class="iconfont u-icon-close2" @click="closeVideo"></div>
       </div>

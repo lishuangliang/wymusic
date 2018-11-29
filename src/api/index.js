@@ -1,6 +1,6 @@
 import ajax from './ajax'
 
-const HOST = 'http://192.168.191.1:3000';
+const HOST = 'http://192.168.1.242:3000';
 
 //根据关键字搜索
 export const searchMusic = (word)=> ajax(`${HOST}/search`, {keywords : word});
